@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background */
+body {
+  @apply bg-gradient-to-r from-pink-300 to-pink-500 min-h-screen flex items-center justify-center;
+}
+
+/* Main Container */
+.todo-container {
+  @apply bg-white shadow-lg rounded-2xl p-6 w-full max-w-lg;
+}
+
+/* Header */
+.todo-header {
+  @apply text-3xl font-bold text-pink-800 mb-4 text-center;
+}
+
+/* Input and Button */
+.todo-input {
+  @apply flex-1 px-4 py-2 border border-pink-400 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-pink-500;
+}
+
+.add-button {
+  @apply bg-pink-600 text-white px-4 py-2 rounded-r-lg hover:bg-pink-700 transition;
+}
+
+/* To-Do List Items */
+.todo-item {
+  @apply flex justify-between items-center bg-pink-100 p-3 rounded-lg shadow;
+}
+
+/* Completed Task */
+.todo-completed {
+  @apply line-through text-gray-500;
+}
+
+/* Buttons */
+.edit-button {
+  @apply text-blue-500 hover:text-blue-700;
+}
+
+.delete-button {
+  @apply text-red-500 hover:text-red-700;
+}

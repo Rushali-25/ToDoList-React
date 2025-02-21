@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Barbie Themed Background */
+body {
+  font-family: 'Pacifico', cursive;
+  background: linear-gradient(to right, #ff69b4, #ff1493);
+  text-align: center;
+  color: white;
+}
+
+
+/* Main App Container */
+.app-container {
+  width: 400px;
+  margin: 50px auto;
+  background: #fff0f5; /* Soft pink */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+}
+
+/* Header */
+h1 {
+  color: #f1e7ec;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-shadow: 2px 2px 5px rgba(255, 20, 147, 0.5);
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  border: 2px solid #ff1493;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 5px #ff1493;
+}
+
+/* Pink Barbie Button */
+button {
+  padding: 10px;
+  background: linear-gradient(to bottom, #ff69b4, #ff1493);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 20, 147, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #ff1493, #ff69b4);
+  transform: scale(1.05);
+}
+
+/* To-Do List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ffccdd;
+  margin: 10px 0;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 8px rgba(255, 20, 147, 0.3);
+}
+
+li:hover {
+  background: #ff99cc;
+}
+
+/* Completed Task */
+.completed {
+  text-decoration: line-through;
+  color: #c71585;
+  font-style: italic;
+}
+
+/* Delete & Edit Buttons */
+li button {
+  background: #ff3366;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+li button:hover {
+  background: #cc0052;
+  transform: scale(1.1);
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
